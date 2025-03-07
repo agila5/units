@@ -111,7 +111,7 @@ make_scale_units <- function(parent=ggplot2::ScaleContinuousPosition) {
       as_units(new_x, units(x))
     },
 
-    make_title = function(self, title) {
+    make_title = function(self, title, ...) {
       if (!is.null(title))
         title <- make_unit_label(title, as_units(1, self$units))
       title
